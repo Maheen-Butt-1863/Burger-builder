@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import LoginForm from "./login";
 
 export default function Navbar() {
+  const [showLoginForm, setShowLoginForm] = useState(false);
+
+  const handleLoginClick = () => {
+    setShowLoginForm(true);
+  };
+
+  const handleCloseLoginForm = () => {
+    setShowLoginForm(false);
+  };
+
   return (
     <div style={{ backgroundColor: '#703b07' }}>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-          <div style={{ backgroundColor: 'white', padding: '5px', marginRight: '10px' }}>
+            <div style={{ backgroundColor: 'white', padding: '5px', marginRight: '10px' }}>
               <img src="/main-logo.png" alt="Logo" style={{ width: '50px' }} />
             </div>
           </a>
@@ -32,7 +43,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="">
                   {' '}
                   Login
                 </a>
@@ -53,6 +64,8 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+
+      {showLoginForm && <LoginForm onCloseLoginForm={handleCloseLoginForm} />}
     </div>
   );
 }

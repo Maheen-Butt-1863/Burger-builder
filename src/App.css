@@ -1,44 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .burgerIngredients{
-  height: 290px;
+  height: 350px;
   width: 100%;
   overflow: auto;
   padding: 50px;
@@ -47,7 +8,7 @@
   text-align: center;
 }
 
-.centered-container {
+.centered-container { 
   background-color: #FFA94D;
   display: flex;
   align-items: center;
@@ -91,9 +52,9 @@
   box-shadow: 2px 2px 2px #966909;
 }
 
-.topSide{
-  background-image: url(../public/assets/top.jpg);
-  background-size: 300px;
+.topSide {
+  background-image: url(../public/assets/top.png);
+  background-size: 30% 100%; 
   height: 110px;
   width: 100%;
   display: table;
@@ -101,12 +62,59 @@
   background-position: center;
 }
 
-.bottomSide{
-  background-image: url(../public/assets/bottom.jpg);
-  background-size: 300px;
+.bottomSide {
+  background-image: url(../public/assets/bottom.png);
+  background-size: 30% 100%; 
   height: 60px;
   width: 100%;
   display: table;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.lettuceSide{
+  background-image: url(../public/assets/lettuse.jpg);
+  background-size: 30% 100%;
+  height: 27px;
+  width: 100%;
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+ background-position: center;
+}
+.baconSide{
+  background-image: url(../public/assets/bacon.png);
+  background-size: 30% 100%;
+  height: 20px;
+  width: 100%;
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cheeseSide{
+  background-image: url(../public/assets/cheese.jpg);
+  background-size: 30% 100%;
+  height: 15px;
+  width: 100%;
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.meatSide{
+  background-image: url(../public/assets/meat.jpg);
+  background-size: 30% 100%;
+  height: 49px;
+  width: 100%;
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fixed-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white; 
+  padding: 10px; 
 }
