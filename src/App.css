@@ -36,3 +36,77 @@
     transform: rotate(360deg);
   }
 }
+
+.burgerIngredients{
+  height: 290px;
+  width: 100%;
+  overflow: auto;
+  padding: 50px;
+}
+.burgerIngredients p{
+  text-align: center;
+}
+
+.centered-container {
+  background-color: #FFA94D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredients-container {
+  padding: 20px;
+}
+
+.ingredient-row {
+  display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+    justify-content: end;
+    align-content: center;
+    justify-items: center;
+}
+
+.action-button {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 80px;
+  border: 1px solid #aa6817;
+  cursor: pointer;
+  outline: none;
+}
+
+.order-button{
+  background-color: #dad735;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #966909;
+  color: #966909;
+  font-family: inherit;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  -webkit-box-shadow: 2px 2px 2px #966909;
+  box-shadow: 2px 2px 2px #966909;
+}
+
+.topSide{
+  background-image: url(../public/assets/top.jpg);
+  background-size: 300px;
+  height: 110px;
+  width: 100%;
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bottomSide{
+  background-image: url(../public/assets/bottom.jpg);
+  background-size: 300px;
+  height: 60px;
+  width: 100%;
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+}
