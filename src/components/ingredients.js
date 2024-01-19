@@ -82,16 +82,24 @@ const Ingredients = () => {
                     <strong>{ingredient}</strong>
                 </p>
                 <button
+                onClick={() => addRemoveIngredient("remove", ingredient)}
+                className="action-button"
+                disabled={ingredientCounts[ingredient] === 0}
+                style={{
+                    backgroundColor: ingredientCounts[ingredient] === 0 ? "#ac9980" : "#d39952",
+                    color: "#ccc",
+                    border: "1px solid #7e7365",
+                    cursor: ingredientCounts[ingredient] === 0 ? "not-allowed" : "",  
+                }}>Less</button>
+                <button
                     onClick={() => addRemoveIngredient("add", ingredient)}
                     className="action-button"
+                    style={{
+                        backgroundColor: "#8f5e1e",
+                        color: "#fff"
+                    }}
                 >
                     More
-                </button>
-                <button
-                    onClick={() => addRemoveIngredient("remove", ingredient)}
-                    className="action-button"
-                >
-                    Less
                 </button>
                 </div>
             ))}
